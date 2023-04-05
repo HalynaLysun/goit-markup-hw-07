@@ -46,7 +46,7 @@ img {
 }
 
 .container {
-    max-width: 1158px;
+    max-width: 100%;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -157,19 +157,19 @@ img {
 /**--MAIN--**/
 
 .section {
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .section-title {
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
         url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover
 } 
 
 .section-title {
@@ -179,13 +179,13 @@ img {
 }
 
 .main-title {
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
-    max-width: 496px;
+    max-width: 320px;
     margin: 0 auto;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
 }
 
 .section-title-btn {
@@ -216,41 +216,30 @@ img {
 /**--BENEFITS--**/
 
 .section-benefits-list {
-    gap: 24px;
+    gap: 72px;
     flex-wrap: wrap;
 }
 
-.section-benefits-item {
-    flex-basis: calc((100% - 72px) / 4);
-}
-
-.section-benefits-icon {
-    width: 64px;
-    height: 64px;
-}
-
 .section-benefits-container {
-    background-color: var(--color-shadow); 
-    padding: 24px 100px;
-    border-radius: 4px;
+    display: none;
 }
 
 .section-benefits-title {
     color: var(--color-primary);
     font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
-    max-width: 264px;
-    margin-top: 8px;
+    width: 100%;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .section-benefits-txt {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    max-width: 264px;
+    width: 100%;
 }
 
 
