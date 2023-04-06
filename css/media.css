@@ -31,11 +31,34 @@
     }
     
     .section-benefits-txt {
-        min-width: 356px;
+        min-width: 356px; 
+    }
+
+    
+    /**--TEAM--**/
+
+    .team > .container {
+        padding-left: 108px;
+        padding-right: 108px;
+    }
+
+    .team-list {
+        gap: 64px 24px;
+        flex-wrap: wrap;
+    }
+    
+    .team-item {
+        flex-basis: calc((100% - 24px) / 2);
     }
 }
 
+/**--NOUT--**/
+
 @media screen and (min-width: 1158px) {
+    img {
+        max-width: 100%;
+    }
+
     .container {
         width: 1158px;
     }
@@ -48,6 +71,8 @@
     .main-title {
         margin-bottom: 48px;
     }
+
+    /**--BENEFITS--**/
 
     .section-benefits-list {
         gap: 24px;
@@ -67,7 +92,7 @@
     }
  
     .section-benefits-item {
-    flex-basis: calc((100% - 72px) / 4);
+        flex-basis: calc((100% - 72px) / 4);
     }
 
     .section-benefits-title {
@@ -82,5 +107,47 @@
         max-width: 264px;
     }
 
+     /**--GALLERY--**/
+
+    .gallery {
+        display: flex;
+        padding-top: 0;
+    }
+
+    .gallery-list {
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    .gallery-item {
+        flex-basis: calc((100% - 48px) / 3);
+    }
+
+    .gallery-title {
+        color: var(--color-primary);
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-align: center;
+        text-transform: capitalize;
+        min-width: 323px;
+        margin-bottom: 72px;
+    }
+
+    /**--TEAM--**/
+
+    .team > .container {
+        padding-left: 156px;
+        padding-right: 156px;
+    }
+
+    .team-list {
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+    
+    .team-item {
+        flex-basis: calc((100% - 72px) / 4);
+    }
 
 }
