@@ -50,6 +50,29 @@
     .team-item {
         flex-basis: calc((100% - 24px) / 2);
     }
+
+    
+    /**--CUSTOMERS--**/
+
+    .customers > .container {
+        padding-left: 108px;
+        padding-right: 108px;
+        margin: 0;
+    }
+    
+    .customers-list {
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+    
+    .customers-link {
+        padding: 16px 32px;
+    }
+
+    .customers-item {
+        flex-basis: calc((100% - 48px) / 3);
+    }
+
 }
 
 /**--NOUT--**/
@@ -150,4 +173,20 @@
         flex-basis: calc((100% - 72px) / 4);
     }
 
+    /**--CUSTOMERS--**/
+
+    .customers-list {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .customers-item {
+        flex-basis: calc((100% - 120px) / 6);
+    }
+
+    .customers > .container {
+        padding-left: 156px;
+        padding-right: 156px;
+        margin: 0;
+    }
 }
