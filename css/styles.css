@@ -102,9 +102,12 @@ img {
     height: 32px;
     display: block;
     margin-left: auto;
+    border: none;
+    background-color: transparent;
 }
 
 .header-icon {
+    stroke: var(--color-primary);
     width: 32px;
     height: 32px;
 }
