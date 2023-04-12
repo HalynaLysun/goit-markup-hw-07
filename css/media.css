@@ -1,25 +1,23 @@
 @media screen and (min-width: 428px) {
-    .container {
-        width: 426px;
-    }
 
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        .section-title {
+        .section-hero {
             background-image: linear-gradient(
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
                 url(../images/people-office-mob-2x.jpg);
         }
     }
+}
 
 @media screen and (min-width: 768px) {
     .container {
-        width: 766px;
+        max-width: 766px;
     }
 
-    .section-title {
+    .section-hero {
         background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
@@ -29,7 +27,7 @@
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        .section-title {
+        .section-hero {
             background-image: linear-gradient(
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
@@ -132,20 +130,9 @@
 
     .section-benefits-title {
         text-align: left;
-        min-width: 264px;
     }
-    
-    .section-benefits-txt {
-        min-width: 356px; 
-    }
-
     
     /**--TEAM--**/
-
-    .team > .container {
-        padding-left: 108px;
-        padding-right: 108px;
-    }
 
     .team-list {
         gap: 64px 24px;
@@ -158,11 +145,6 @@
     
     /**--CUSTOMERS--**/
 
-    .customers > .container {
-        padding-left: 104px;
-        padding-right: 104px;
-    }
-    
     .customers-list {
         flex-wrap: wrap;
         gap: 72px 24px;
@@ -178,11 +160,6 @@
 
     
     /**--FOOTER--**/
-
-    .footer .container {
-        padding-left: 108px;
-        padding-right: 108px;
-    }
 
     .container-footer {
         display: flex;
@@ -239,6 +216,7 @@
     }
 }
 
+
 /**--NOUT--**/
 
 @media screen and (min-width: 1158px) {
@@ -247,17 +225,15 @@
     }
 
     .container {
-        width: 1158px;
+        max-width: 1158px;
+    }
+
+    .section {
+        padding: 120px 0;
     }
 
 
-/**--HEADER--**/
-
-    .header-container {
-        padding-left: 156px;
-        padding-right: 156px;
-        justify-content: left
-    }
+    /**--HEADER--**/
 
     .header-address-list {
         display: flex;
@@ -273,7 +249,7 @@
         margin-left: 40px;
     }
 
-    .section-title {
+    .section-hero {
         padding-top: 188px;
         padding-bottom: 188px;
         background-image: linear-gradient(
@@ -285,7 +261,7 @@
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        .section-title {
+        .section-hero {
             background-image: linear-gradient(
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
@@ -299,11 +275,6 @@
 
     /**--BENEFITS--**/
     
-    .section-benefits > .container {
-        padding-left: 156px;
-        padding-right: 156px;
-    }
-
     .section-benefits-list {
         gap: 24px;
         flex-wrap: wrap;
@@ -316,9 +287,11 @@
 
     .section-benefits-container {
         background-color: var(--color-shadow); 
-        padding: 24px 100px;
+        padding: 24px 10px;
         border-radius: 4px;
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
  
     .section-benefits-item {
@@ -328,21 +301,13 @@
     .section-benefits-title {
         font-size: 20px;
         line-height: 1.2;
-        max-width: 264px;
         margin-top: 8px;
         margin-bottom: 8px;
     }
 
-    .section-benefits-txt {
-        max-width: 264px;
-    }
 
-     /**--GALLERY--**/
+    /**--GALLERY--**/
 
-     .gallery > .container {
-        padding-left: 156px;
-        padding-right: 156px;
-    }
     .gallery {
         display: flex;
         padding-top: 0;
@@ -364,16 +329,10 @@
         letter-spacing: 0.02em;
         text-align: center;
         text-transform: capitalize;
-        min-width: 323px;
         margin-bottom: 72px;
     }
 
     /**--TEAM--**/
-
-    .team > .container {
-        padding-left: 156px;
-        padding-right: 156px;
-    }
 
     .team-list {
         gap: 24px;
@@ -385,12 +344,6 @@
     }
 
     /**--CUSTOMERS--**/
-
-    .customers > .container {
-        padding-left: 156px;
-        padding-right: 156px;
-        margin: 0;
-    }
 
     .customers-list {
         flex-wrap: wrap;
@@ -404,26 +357,11 @@
 
     /**--FOOTER--**/
 
-    .footer {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-
-    .footer > .container {
-        padding-left: 156px;
-        padding-right: 156px;
-    }
-
     .footer-container-main {
-        min-width: 264px;
+  
         margin-right: 120px;
     }
 
-    .footer-text {
-        max-width: 264px;
-        margin-bottom: 0;
-    }
-    
     .social-title {
         margin-bottom: 24px;
     }
@@ -433,7 +371,6 @@
         gap: 24px;
     }
 
- 
     .footer-form-input {
         margin-right: 24px;
     }
