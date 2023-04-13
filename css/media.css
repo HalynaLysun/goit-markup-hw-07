@@ -51,8 +51,8 @@
     }
 
     .header-container {
-        display: flex;
-        justify-content: space-between;  
+        padding-bottom: 0;
+        padding-top: 0;
     }
 
     .nav {
@@ -74,6 +74,8 @@
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        padding: 24px 0;
+        display: block;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -84,8 +86,9 @@
 
     .active::after {
         display: block;
-        margin-top: 20px;
         content: '';
+        left: 0;
+        bottom: -2px;
         width: 100%;
         height: 4px;
         background-color: var(--color-filtr);
@@ -121,7 +124,6 @@
 
      .section-benefits-list {
         gap: 72px 24px ;
-        flex-wrap: wrap;
     }
 
     .section-benefits-item {
@@ -136,7 +138,6 @@
 
     .team-list {
         gap: 64px 24px;
-        flex-wrap: wrap;
     }
     
     .team-item {
@@ -146,12 +147,11 @@
     /**--CUSTOMERS--**/
 
     .customers-list {
-        flex-wrap: wrap;
         gap: 72px 24px;
     }
     
     .customers-link {
-        padding: 16px 32px;
+        padding: 10px 10px;
     }
 
     .customers-item {
@@ -171,19 +171,10 @@
         align-items: start;
     }
 
-    .footer-container-main {
-        min-width: 264px;
-    }
-
     .footer-link {
         text-align: left;
     }
 
-    .footer-text {
-        max-width: 264px;
-        margin-bottom: 0;
-    }
-    
     .social-title {
         text-align: left;
         margin-bottom: 24px;
@@ -192,9 +183,12 @@
     .footer-list {
         flex-wrap: wrap;
         gap: 24px;
+        max-width: 208px;
+        width: 100%;
     }
 
     .footer-form {
+        max-width: 458px;
         width: 100%;
     }
 
@@ -207,8 +201,9 @@
         text-align: left;
     }
 
-    .footer-form-input {
-        min-width: 264px;
+    .footer-form-label {
+        display: block;
+        width: 100%;
     }
 
     .footer-form-button {
@@ -277,7 +272,6 @@
     
     .section-benefits-list {
         gap: 24px;
-        flex-wrap: wrap;
     }
 
     .section-benefits-icon {
@@ -336,7 +330,6 @@
 
     .team-list {
         gap: 24px;
-        flex-wrap: wrap;
     }
   
     .team-item {
@@ -346,7 +339,6 @@
     /**--CUSTOMERS--**/
 
     .customers-list {
-        flex-wrap: wrap;
         gap: 24px;
     }
 
@@ -357,8 +349,16 @@
 
     /**--FOOTER--**/
 
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer-container {
+        flex-wrap: nowrap;
+    }
+
     .footer-container-main {
-  
         margin-right: 120px;
     }
 
@@ -367,11 +367,17 @@
     }
 
     .footer-list {
-        flex-wrap: wrap;
         gap: 24px;
+        margin-right: 80px;
     }
 
+    .form-footer {
+        max-width: 453px;
+        width: 100%;
+    }
+    
     .footer-form-input {
+        margin-bottom: 0;
         margin-right: 24px;
     }
     
