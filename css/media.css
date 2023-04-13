@@ -138,6 +138,7 @@
 
     .team-list {
         gap: 64px 24px;
+        max-width: 552px;
     }
     
     .team-item {
@@ -169,26 +170,37 @@
     .footer-container {
         justify-content: start;
         align-items: start;
+        padding: 0 93px;
+    }
+
+    .footer-container-main {
+        min-width: 268px;
+        margin: 0;
     }
 
     .footer-link {
         text-align: left;
+        margin-bottom: 16px;
     }
 
     .social-title {
         text-align: left;
-        margin-bottom: 24px;
     }
 
     .footer-list {
         flex-wrap: wrap;
         gap: 24px;
-        max-width: 208px;
+        max-width: 232px;
         width: 100%;
+        justify-content: left;
+    }
+    
+    .footer-text {
+        margin: 0;
     }
 
     .footer-form {
-        max-width: 458px;
+        max-width: 453px;
         width: 100%;
     }
 
@@ -208,6 +220,7 @@
 
     .footer-form-button {
         height: 40px;
+        margin: 0;
     }
 }
 
@@ -330,6 +343,7 @@
 
     .team-list {
         gap: 24px;
+        max-width: 100%;
     }
   
     .team-item {
@@ -356,19 +370,16 @@
 
     .footer-container {
         flex-wrap: nowrap;
+        padding: 0 15px;
     }
 
     .footer-container-main {
         margin-right: 120px;
     }
 
-    .social-title {
-        margin-bottom: 24px;
-    }
-
     .footer-list {
         gap: 24px;
-        margin-right: 80px;
+        margin-right: 200px;
     }
 
     .form-footer {
@@ -380,10 +391,6 @@
         margin-bottom: 0;
         margin-right: 24px;
     }
-    
-    .backdrop {
-        position: fixed;
-    }    
 
     .modal {
         max-width: 408px;
